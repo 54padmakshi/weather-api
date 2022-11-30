@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather-Api</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./image.ico" type="image/x-icon">
+</head>
+<body>
+   <div class="container">
+      <div class="we-api">
+          <div class="head1"> <h1 class="heading1" > Weather -Api </h1> </div>
+          <div class="in1"> 
+            <input type="text" id="location" placeholder="Location " style="width:1128px; height: 30px;color: white; background-color: black;font-size: 20px;" >
+            <div class = "c" id="location-warning" style="color: white; font-size: small;width:1128px; height: 30px; "> </div>
+         </div>
+          <div class="in2"> 
+             <input type="text" id="acestoken" placeholder="Access Token " style="width:1128px; height: 30px; color:white; background-color: black;font-size: medium;">
+             <div class = "c" id="acestoken - warning" style="color: white;font-size: small;width:1128px; height: 30px; " > </div>
+             </div>
+          <div class="b1"> <button style="width: 200px; height: 40px;" onclick="myFunction()" > Submit </button></div>
+      </div>
+  <div class="we-data">
+        <div class="wehead"> <h2> Weather Data </h2></div>
+        <div class="bord">
+              <div class="contents"> 
+                  <div id="loc"> Location : </div>
+                  <div class ="row"><span id = "lat"> Lat :</span>  <span id = "long">    Long :</span> </div>
+                  <div id="re"> Region :</div> 
+
+                  <div id="tz"> Time Zone : </div>
+                  <div id="lt">localtime</div>
+                  <div id="lte">localtime_epoch :</div>
+
+                  <div id="ws"> Wind Speed : </div>
+                 
+                  <div id="pr"> Pressure : </div>
+                  <div id="hu"> Humidity : </div>
+                  <div id="wd"> Wind Direction : </div>
+                  <div id="ui"> UV Index : </div>
+                  <div id="fl"> Feels Like : </div>
+                 <div id="ccover"> Cloud Cover :</div>
+              </div>
+          </div>
+  </div>
+   </div>
+   
+
+    <script src="./script.js"></script>
+</body>
+</html>
