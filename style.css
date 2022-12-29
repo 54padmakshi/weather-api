@@ -4,21 +4,21 @@
 margin-top:  10px;
 }
 .container{
-    width: 100%;
+    width: auto;
     height: 100%;
 
 }
 .we-api{
     position: relative;   
-    width: 100%;
-    height: 500px;
+    width: auto;
+    height: 20%;
     background-color: black;
     left: 0px;
     top: 0px;    
 }
 .we-data{
-    height: 70%;
-    width: 100%;
+    height: 100%;
+    width: auto;
 }
 .head1{
     margin-top: 5px;
@@ -47,9 +47,9 @@ padding-left: 150px;
 .bord{
     box-sizing: border-box;
     border: 2px solid black;
-    
-    width : 1400px;
-    height: 1000px;
+    border-collapse: collapse;
+    width : auto;
+    height: auto;
     margin-right: 82px;  
     margin-left: 62px; 
 
@@ -69,4 +69,18 @@ padding-left: 150px;
     font-family: 'Inter';
     font-style: normal;
     line-height: 61px;
+}
+#location{
+    width:428px; 
+    height: 30px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}
+#acestoken{
+    width:428px;
+     height: 30px; 
+    color:white;
+     background-color: black;
+     font-size: medium;
 }

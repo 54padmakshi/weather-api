@@ -41,12 +41,12 @@ function myFunction(){
       //  access key -  S5FWJZQKK43QRRUL9YQHTUABC
      //const url = "http://api.weatherstack.com/current?access_key= "+ac1+ "&query="+l1+ "api.weatherstack.com/current?access_key= "+ac1+ "&query="+l1;
      console.log(url);
-    // getapi(url);
+  
      async function getapi(url) {
         const response = await fetch(url);
-        data =await response.json();
-        console.log(data);
-       
+        console.log(response);
+        const data =await response.json();
+        console.log(data);             
         show(data);
      }
      function show(data) {
@@ -56,7 +56,7 @@ function myFunction(){
         var re =data.address;
         var tz = data.timezone;
         var lt = data.description; 
-        var lte =data.currentConditions.datetimeEpoch; //added extra
+        var lte =data.currentConditions.datetimeEpoch; 
         var hm = data.currentConditions.humidity;
         var ps =data.currentConditions.pressure;
         var ws = data.currentConditions.windspeed;
@@ -64,7 +64,7 @@ function myFunction(){
         var wd = data.currentConditions.winddir;
         var uv = data.currentConditions.uvindex;
         var fe = data.currentConditions.feelslike;
-        var clo = data.currentConditions.cloudcover; //added extra    
+        var clo = data.currentConditions.cloudcover;    
 
 
         document.getElementById("loc").innerHTML +=loc;
@@ -85,7 +85,9 @@ function myFunction(){
         
      }
      getapi(url);
-      
+     
     }
-   
+   if (data.resolvedAddress == '') {
+    alert('wrong entry');
+   }
 }
